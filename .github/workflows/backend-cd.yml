@@ -148,7 +148,7 @@ jobs:
         working-directory: starter/backend/k8s
         run: |
           kustomize edit set image \
-            backend=477803273608.dkr.ecr.us-east-1.amazonaws.com/backend:${{ github.sha }}
+            backend=495920378570.dkr.ecr.us-east-1.amazonaws.com/movie-app-backend:${{ github.sha }}
 
       - name: Deploy backend
         working-directory: starter/backend/k8s
