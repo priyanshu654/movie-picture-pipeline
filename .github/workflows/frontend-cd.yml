@@ -140,7 +140,7 @@ jobs:
         working-directory: starter/frontend/k8s
         run: |
           kustomize edit set image \
-            495920378570.dkr.ecr.us-east-1.amazonaws.com/movie-app:${{ github.sha }}
+            frontend=495920378570.dkr.ecr.us-east-1.amazonaws.com/frontend:${{ github.sha }}
 
       - name: Deploy frontend
         working-directory: starter/frontend/k8s
